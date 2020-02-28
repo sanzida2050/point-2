@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>Currency Converter</title>
+</head>
+<style>
+body{
+    background:linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, 0.2)), url(image.jpg) center;
+}
+h1{
+background:#00bfff;
+text-align:center;
+font-size:38px;
+padding:20px lem;
+font-weight :bold;
+margin-left:35%; 
+margin-right:35%; 	
+cursor:pointer;
+font-family:Times New Roman;
+}
+marquee{
+ background:#00FFFF;
+font-size:20px;
+padding-top:6px;
+font-weight :bold;
+margin:-23px;
+margin-left:35%; 
+margin-right:35%;	
+cursor:pointer;
+font-family:Times New Roman;
+}
+fieldset{
+width:45%;
+margin:auto;
+border:1px solid #000;
+text-align:left;
+font-family:Times New Roman;
+font-size:18px;
+font-weight :bold;
+color: white;
+
+}
+input [type=number],[id]{
+ background:#fff;
+border:1px solid #000;
+border-radius:2px;
+border-width:1px;
+color:#36454b;
+font-size:15px;
+margin:5px;
+padding:12px;
+display:inline-block;
+font-weight :bold;
+}
+input[type=button]{
+width:75px;
+height:40px;
+font-weight:bold;
+}
+input[type=reset]{
+width:95px;
+height:43px;
+font-weight:bold;
+}
+
+
+
+</style>
+<script>
+function currencyConnverter(valNum){
+if(converter.taka.value<=0)
+window.alert("Enter Value Greaterthan 0");
+else{
+document.getElementById("dollar").value=(valNum*0.012).toFixed(4);
+document.getElementById("rupee").value=(valNum*2.16).toFixed(4);
+document.getElementById("rupee1").value=(valNum*2.14).toFixed(4);
+document.getElementById("rupee2").value=(valNum*1.82).toFixed(4);
+document.getElementById("currency").value=(valNum*0.84).toFixed(4);
+document.getElementById("dollar1").value=(valNum*0.016).toFixed(4);
+document.getElementById("dollar2").value=(valNum*0.016).toFixed(4);
+document.getElementById("dollar3").value=(valNum*0.22).toFixed(4);
+document.getElementById("peso").value=(valNum*2.32).toFixed(4);
+document.getElementById("peso1").value=(valNum*40.12).toFixed(4);
+
+
+
+}
+}
+</script>
+
+<body>
+
+<h1>Currency Converter</h1>
+<marquee>Welcome to currency converter</marquee>
+<br><br>
+
+<form name="converter">
+
+<fieldset>
+
+<label>Taka(Bangladeshi):</lable>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="number" id ="taka" required>
+<input type="button" value="Convert" onclick="currencyConnverter(converter.taka.value)"><br><br>
+
+<label>Dollar(United States):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input id="dollar"><br><br>
+<label>Rupee(Sri Lankan):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="rupee"><br><br>
+<label>Rupee(Indian):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input id="rupee1"><br><br>
+<label>Rupee(Pakistani):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input id="rupee2"><br><br>
+<label>Currency(Bhutan):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="currency"><br><br>
+<label>Dollar(Singapure):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="dollar1"><br><br>
+<label>Dollar(Canadian):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="dollar2"><br><br>
+<label>Dollar(Liberian):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="dollar3"><br><br>
+<label>Peso(Mexican):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input id="peso"><br><br>
+<label>Peso(Colombian):</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="peso1"><br><br>
+<input type="reset" value="Reset Form">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<p align="center">Press Reset Form for reseting the form</p> 
+</fieldset>
+</form>
+</body>	
+</html>
